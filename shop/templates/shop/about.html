@@ -1,0 +1,56 @@
+{% extends "shop/base.html"  %}
+{% load static %}
+
+{% block title %}О нас{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlideOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'shop/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'shop/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'shop/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'shop/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock banner-slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+  <br>
+  <div class="text-center">О нас</div>
+  <br>
+  <div class="row container">
+    <p class="fs-4 text-center">Это общество с ограниченой ответственостью офис
+      зарегистрирован и находится в Индии. Компания была зарегистрирована в 2018,
+      а производит продукцию с 2020 </p>
+  </div>
+  <br><br>
+  <div class="text-center">Деятельность</div>
+  <br>
+  <div class="row container">
+    <p class="fs-4 text-center">
+      Дспользуем правильную технологию для, того чтобы радовать наших покупателей.
+      Используем преимущества сообщеста фермеров через уникальную Модель
+      "Фермерских отношений". Чтобы предвидеть вкусы наших "Потребителей"
+      необходимо создавать высококачественую продукцию и делать ее доступной по всему миру </p>
+    </div>
+  </div>
+  <br><br>
+
+{% endblock main-content %}

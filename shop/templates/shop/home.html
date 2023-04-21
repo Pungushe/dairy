@@ -1,0 +1,135 @@
+{% extends "shop/base.html"  %}
+{% load static %}
+
+{% block title %}Home {% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlideOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'shop/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'shop/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'shop/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'shop/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endblock banner-slider %}
+
+{% block information %}
+
+<div class="container">
+  <div class="row bg-success text-center p-5 text-white border-bottom shadow">
+    <h1>Продукты</h1>
+    <small class="fs-5">Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.
+    Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.Dodla предлагает широкий ассортимент продуктов как из жидкого молока, так и из субпродуктов. Жидкое молоко состоит из 5 видов вариантов, а побочный продукт состоит из 14 видов вариантов.</small>
+  </div>
+</div>
+{% endblock information %}
+
+
+{% block main-content %}
+  <div class="container">
+    <h2 class="text-center">Молочные продукты</h2>
+    <br><br>
+
+    <div class="row container">
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+        <div class="goodnesssec buttermilk smbg">
+          <a href="{% url 'category' 'GH' %}">
+            <div class="goodnessseccont text-center">
+              <img class="img-responsive center-block" src="{% static 'shop/images/product/buffalo-ghee.png' %}" alt="">
+              <p class="mlkpro">Топленое масло </p>
+            </div>
+          </a>
+        </div>
+       </div>
+
+      <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+        <div class="goodnesssec buttermilk curdbgpro">
+          <a href="{% url 'category' 'CR' %}">
+            <div class="goodnessseccont text-center">
+              <img class="img-responsive center-block" src="{% static 'shop/images/product/curd-total.png' %}" alt="">
+              <p class="mlkpro">Творог </p>
+            </div>
+          </a>
+       </div>
+     </div>
+
+
+     <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+        data-wow-delay="0.6s" style="animation-duration:1s; animation-delay:0.6s;
+        animation-name:none;">
+        <div class="goodnesssec buttermilk buttermilk">
+          <a href="{% url 'category' 'IC' %}">
+            <div class="goodnessseccont text-center">
+              <img class="img-responsive center-block" src="{% static 'shop/images/product/kulfi.png' %}" alt="">
+              <p class="mlkpro">Мороженое</p>
+            </div>
+          </a>
+       </div>
+     </div>
+    </div>
+  <br><br>
+
+  <div class="row container">
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+      data-wow-delay="0.6s" style="animation-duration:1s; animation-delay:0.6s;
+      animation-name:none;">
+      <div class="goodnesssec buttermilk smbg">
+        <a href="{% url 'category' 'MS' %}">
+          <div class="goodnessseccont text-center">
+            <img class="img-responsive center-block" src="{% static 'shop/images/product/milk-shake-chocolate.png' %}" alt="">
+            <p class="mlkpro">Коктейль </p>
+          </div>
+        </a>
+      </div>
+     </div>
+
+    <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+      data-wow-delay="0.6s" style="animation-duration:1s; animation-delay:0.6s;
+      animation-name:none;">
+      <div class="goodnesssec buttermilk curdbgpro">
+        <a href="{% url 'category' 'ML' %}">
+          <div class="goodnessseccont text-center">
+            <img class="img-responsive center-block" src="{% static 'shop/images/product/cow-milk.png' %}" alt="">
+            <p class="mlkpro">Молоко </p>
+          </div>
+        </a>
+     </div>
+   </div>
+   
+   <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s"
+      data-wow-delay="0.6s" style="animation-duration:1s; animation-delay:0.6s;
+      animation-name:none;">
+      <div class="goodnesssec buttermilk buttermilk">
+        <a href="{% url 'category' 'IC' %}">
+          <div class="goodnessseccont text-center">
+            <img class="img-responsive center-block" src="{% static 'shop/images/product/icbars.png' %}" alt="">
+            <p class="mlkpro">Шоколадное мороженое</p>
+          </div>
+         </a>
+       </div>
+     </div>
+    </div>
+  </div>
+  <br><br>
+{% endblock main-content %}
