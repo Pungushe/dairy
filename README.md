@@ -1,4 +1,4 @@
-Репозиторий Student Study на Django 3.
+Репозиторий Dairy-Shop.
 
 Установка (для пользователей операционных систем семейства MacOs/Linux/Windows):
 
